@@ -2,3 +2,25 @@
   height: 100%;
   width: 100%;
 }
+.parent .text {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.parent img {
+  vertical-align: middle;
+}
+.simplehead {
+  text-align: center;
+  color: rgb(255, 193, 7);
+}
