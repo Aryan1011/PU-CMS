@@ -1,5 +1,5 @@
 /* hello */
-*{
+* {
   padding: none;
   margin: none;
 }
@@ -67,7 +67,8 @@
   background-color: #c0392b !important;
 }
 
-input, textarea{
+input,
+textarea {
   display: block;
   padding: 3px;
   margin: 15px auto;
@@ -76,13 +77,14 @@ input, textarea{
   border: 2px solid black;
   border-radius: 5px;
 }
-*,::before {
+*,
+::before {
   box-sizing: border-box;
   margin-block-end: -15px;
   padding-bottom: 20px;
   padding-top: 5px;
 }
-.btn{
+.btn {
   margin: 15px auto;
   display: block;
   padding: 5px 12px;
@@ -92,4 +94,11 @@ input, textarea{
   border-radius: 10px;
   border: 2px solid black;
   cursor: pointer;
+}
+
+h2 {
+  background-color: grey;
+  text-align: center;
+  justify-content: center;
+  height: 60px;
 }

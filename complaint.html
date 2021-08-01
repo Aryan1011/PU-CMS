@@ -14,110 +14,6 @@
     />
     <link rel="stylesheet" href="css/complaint.css" />
 
-    <style>
-      h2 {
-        background-color: grey;
-        text-align: center;
-        justify-content: center;
-        height: 60px;
-      }
-      /* hello */
-*{
-  padding: none;
-  margin: none;
-}
-.user_card {
-  height: 400px;
-  width: 350px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: #f39c12;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-}
-.brand_logo_container {
-  position: absolute;
-  height: 170px;
-  width: 170px;
-  top: -75px;
-  border-radius: 50%;
-  background: #c0392b;
-  padding: 10px;
-  text-align: center;
-}
-.brand_logo {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-.form_container {
-  margin-top: 100px;
-}
-.login_btn {
-  width: 100%;
-  background: #c0392b !important;
-  color: white !important;
-}
-.login_btn:focus {
-  box-shadow: none !important;
-  outline: 0px !important;
-}
-.login_container {
-  padding: 0 2rem;
-}
-.input-group-text {
-  background: #c0392b !important;
-  color: white !important;
-  border: 0 !important;
-  border-radius: 0.25rem 0 0 0.25rem !important;
-}
-.input_user,
-.input_pass:focus {
-  box-shadow: none !important;
-  outline: 0px !important;
-}
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #c0392b !important;
-}
-
-input, textarea{
-  display: block;
-  padding: 3px;
-  margin: 15px auto;
-  width: 40%;
-  outline: none;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-*,::before {
-  box-sizing: border-box;
-  margin-block-end: -15px;
-  padding-bottom: 20px;
-  padding-top: 5px;
-}
-.btn{
-  margin: 15px auto;
-  display: block;
-  padding: 5px 12px;
-  background-color: gray;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 2px solid black;
-  cursor: pointer;
-}
-    </style>
-
     <title>Complaint Cell</title>
   </head>
   <body>
@@ -140,7 +36,7 @@ input, textarea{
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page"   href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -186,26 +82,37 @@ input, textarea{
 
     <!-- END OF SCRIPT -->
 
-    <div style="background-color: khaki;">
-
-    <form action="http://localhost:5000/complaint" id="complaint" method="post" >
+    <div style="background-color: khaki">
+      <form
+        action="http://localhost:5000/complaint"
+        id="complaint"
+        method="post"
+      >
         <h2>Complainant's INFO</h2>
- 
-    <input type="text" name="roll" placeholder="Enter your Roll Number" />
-    <input type="text" name="name" placeholder="Enter your name" />
-    <input type="text" name="department" placeholder="Enter your Department" />
-    <input type="text" name="gender" placeholder="Enter your Gender" />
 
+        <input type="text" name="roll" placeholder="Enter your Roll Number" />
+        <input type="text" name="name" placeholder="Enter your name" />
+        <input
+          type="text"
+          name="department"
+          placeholder="Enter your Department"
+        />
+        <input type="text" name="gender" placeholder="Enter your Gender" />
 
-    
-         
         <h2>Complaint INFO</h2>
-  
-        <input type="text" name="post" placeholder="Enter name/post of the concerned person"  />    
-        <textarea name="subject" cols="30" rows="5">  Complaint Subject</textarea>
-        <textarea name="details" cols="150" rows="10">Complaint Details </textarea>
+
+        <input
+          type="text"
+          name="post"
+          placeholder="Enter name/post of the concerned person"
+        />
+        <textarea name="subject" cols="30" rows="5">
+  Complaint Subject</textarea
+        >
+        <textarea name="details" cols="150" rows="10">
+Complaint Details </textarea
+        >
         <button class="btn" type="submit">Submit Now</button>
-        
       </form>
     </div>
 
