@@ -12,6 +12,7 @@ app.use(
 );
 const home = fs.readFileSync("index.html");
 const complaint = fs.readFileSync("./complaint.html");
+const pending = fs.readFileSync("./pending.html");
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost:27017/pucms", {
@@ -39,12 +40,15 @@ app.get("/", (req, res) => {
 app.get("/complaint", (req, res) => {
   res.end(complaint);
 });
+app.get("/pending", (req, res) => {
+  res.end(pending);
+});
 app.post("/complaint", (req, res) => {
   var myData = new complaints(req.body);
-  console.log(myData);
+  console.log();
   console.log(req.body);
   myData.save().then(() => {
-    res.send("This item has been saved into Database");
+    res.send(myData);
   });
   // res.end(complaint);
 });

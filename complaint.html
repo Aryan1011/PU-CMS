@@ -1,185 +1,148 @@
 <html lang="en">
-  <!-- hello -->
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- hello -->
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/complaint.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Complaint Cell</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">AWAAZ</a>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/complaint.css" />
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Our Work
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Success Stories</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Our Reach</a></li>
-                  <li><a class="dropdown-item" href="#">News & Feeds</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Complaint Register</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <title>Complaint Cell</title>
+</head>
 
-    <!-- SCRIPT -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/6bcbf143ce.js"
-      crossorigin="anonymous"
-    ></script>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AWAAZ</a>
 
-    <!-- END OF SCRIPT -->
-
-    <div style="background-color: khaki">
-      <form
-        action="http://localhost:5000/complaint"
-        id="complaint"
-        method="post"
-      >
-        <h2>Complainant's INFO</h2>
-
-        <input type="text" name="roll" placeholder="Enter your Roll Number" />
-        <input type="text" name="name" placeholder="Enter your name" />
-        <input
-          type="text"
-          name="department"
-          placeholder="Enter your Department"
-        />
-        <input type="text" name="gender" placeholder="Enter your Gender" />
-
-        <h2>Complaint INFO</h2>
-
-        <input
-          type="text"
-          name="post"
-          placeholder="Enter name/post of the concerned person"
-        />
-        <textarea name="subject" cols="30" rows="5">
-  Complaint Subject</textarea
-        >
-        <textarea name="details" cols="150" rows="10">
-Complaint Details </textarea
-        >
-        <button class="btn" type="submit">Submit Now</button>
-      </form>
-    </div>
-
-    <!-- FOOTER SECTION -->
-    <footer style="background-color: #2c292f">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 text-center text-md-left">
-            <div class="py-0">
-              <h3 class="my-4 text-white">
-                About<span class="mx-2 font-italic text-warning"> AWAAZ</span>
-              </h3>
-
-              <img
-                src="Images/awaaz logo.png"
-                class="footerimg"
-                alt="awaaz logo"
-              />
-            </div>
-          </div>
-
-          <div class="col-md-4 text-white text-center text-md-left">
-            <div class="py-2 my-4">
-              <div>
-                <p class="text-white">
-                  <i class="fa fa-map-marker mx-2"></i> Uiet Panjab University,
-                  Sector 14, Chandigarh, 160014
-                </p>
-              </div>
-
-              <div>
-                <p><i class="fa fa-phone mx-2"></i> +91 987654321</p>
-              </div>
-              <div>
-                <p>
-                  <i class="fa fa-envelope mx-2"></i
-                  ><a href="">awaazfoundation@gmail.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 text-white my-4 text-center text-md-left">
-            <span class="font-weight-bold">About us</span>
-            <p class="text-warning my-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              enim, quasi dicta rem quibusdam quod magnam qui beatae harum
-              atque..
-            </p>
-            <div class="py-2"></div>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Our Work
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Success Stories</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Our Reach</a></li>
+                <li><a class="dropdown-item" href="#">News & Feeds</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Complaint Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pending">Complaints</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <center>
-        <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-        <a href="#"
-          ><i class="fab fa-google-plus fa-2x text-danger mx-3"></i
-        ></a>
-        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
-        <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+    </nav>
+  </header>
 
-        <p class="text-light py-4 mb-4">
-          Copyright &copy;2021 AWAAZ FOUNDATION
-        </p>
-      </center>
+  <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6bcbf143ce.js" crossorigin="anonymous"></script>
 
-      <!-- end of footer -->
-    </footer>
-  </body>
+  <!-- END OF SCRIPT -->
+
+  <div style="background-color: khaki">
+    <form action="http://localhost:5000/complaint" id="complaint" method="post">
+      <h2>Complainant's INFO</h2>
+
+      <input type="text" name="roll" placeholder="Enter your Roll Number" />
+      <input type="text" name="name" placeholder="Enter your name" />
+      <input type="text" name="department" placeholder="Enter your Department" />
+      <input type="text" name="gender" placeholder="Enter your Gender" />
+
+      <h2>Complaint INFO</h2>
+
+      <input type="text" name="post" placeholder="Enter name/post of the concerned person" />
+      <textarea name="subject" cols="30" rows="5">
+  Complaint Subject</textarea>
+      <textarea name="details" cols="150" rows="10">
+Complaint Details </textarea>
+      <button class="btn" type="submit">Submit Now</button>
+    </form>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer style="background-color: #2c292f">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center text-md-left">
+          <div class="py-0">
+            <h3 class="my-4 text-white">
+              About<span class="mx-2 font-italic text-warning"> AWAAZ</span>
+            </h3>
+
+            <img src="Images/awaaz logo.png" class="footerimg" alt="awaaz logo" />
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white text-center text-md-left">
+          <div class="py-2 my-4">
+            <div>
+              <p class="text-white">
+                <i class="fa fa-map-marker mx-2"></i> Uiet Panjab University,
+                Sector 14, Chandigarh, 160014
+              </p>
+            </div>
+
+            <div>
+              <p><i class="fa fa-phone mx-2"></i> +91 987654321</p>
+            </div>
+            <div>
+              <p>
+                <i class="fa fa-envelope mx-2"></i><a href="">awaazfoundation@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-white my-4 text-center text-md-left">
+          <span class="font-weight-bold">About us</span>
+          <p class="text-warning my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            enim, quasi dicta rem quibusdam quod magnam qui beatae harum
+            atque..
+          </p>
+          <div class="py-2"></div>
+        </div>
+      </div>
+    </div>
+    <center>
+      <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+      <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+
+      <p class="text-light py-4 mb-4">
+        Copyright &copy;2021 AWAAZ FOUNDATION
+      </p>
+    </center>
+
+    <!-- end of footer -->
+  </footer>
+</body>
+
 </html>
